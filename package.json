@@ -1,7 +1,7 @@
 {
-  "name": "@wanyne/dns",
-  "version": "1.1.6",
-  "description": "@wanyne/dns",
+  "name": "@wnynya/dns",
+  "version": "0.7.0",
+  "description": "@wnynya/dns",
   "author": "Wany <sung@wany.io> (https://wany.io)",
   "main": "lib/index.js",
   "exports": {
@@ -12,10 +12,10 @@
     "dns",
     "resolve"
   ],
-  "homepage": "https://github.com/wnynya/wanyne-modules-DNS#readme",
+  "homepage": "https://github.com/wnynya/node-DNS#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wnynya/wanyne-modules-DNS.git"
+    "url": "https://github.com/wnynya/node-DNS.git"
   },
   "scripts": {
     "babel": "npx babel src --out-file-extension .js --out-dir lib"

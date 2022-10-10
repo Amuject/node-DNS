@@ -1,1 +1,1 @@
-# @wanyne/dns
+# @wnynya/dns
