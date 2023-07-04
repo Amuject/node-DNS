@@ -1,6 +1,6 @@
 import dns from 'dns/promises';
 
-async function a(domain, timeout = 2000, server) {
+async function a(domain: string, timeout: number = 2000, server?: string) {
   let result = {
     error: undefined,
     type: 'dns/a',
@@ -34,7 +34,7 @@ async function a(domain, timeout = 2000, server) {
   });
 }
 
-async function aaaa(domain, timeout = 2000, server) {
+async function aaaa(domain, timeout = 2000, server?) {
   let result = {
     error: undefined,
     type: 'dns/aaaa',
@@ -74,8 +74,8 @@ async function aaaaa(domain, server) {
     domain: domain,
     records: [],
   };
-  const ipv4 = await a(domain, 2000, server);
-  const ipv6 = await aaaa(domain, 2000, server);
+  const ipv4: any = await a(domain, 2000, server);
+  const ipv6: any = await aaaa(domain, 2000, server);
   if (ipv4.error || ipv6.error) {
     result.error = ipv4.error || ipv6.error;
     return result;

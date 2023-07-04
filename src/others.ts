@@ -5,7 +5,7 @@ async function soa(domain, timeout = 2000) {
     error: undefined,
     type: 'DNS/SOA',
     domain: domain,
-    records: [],
+    records: {},
   };
   return new Promise((resolve, reject) => {
     let to = setTimeout(() => {
@@ -285,7 +285,7 @@ async function lookup(domain, timeout = 2000) {
     error: undefined,
     type: 'DNS/LOOKUP',
     domain: domain,
-    records: [],
+    records: {},
   };
   return new Promise((resolve, reject) => {
     let to = setTimeout(() => {

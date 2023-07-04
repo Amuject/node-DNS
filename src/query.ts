@@ -1,4 +1,4 @@
-import { a, aaaa, aaaaa, ip, ips } from './aaaaa.mjs';
+import { a, aaaa, aaaaa, ip, ips } from './aaaaa.js';
 import {
   soa,
   cname,
@@ -11,7 +11,7 @@ import {
   naptr,
   reverse,
   lookup,
-} from './others.mjs';
+} from './others.js';
 
 async function query(domain) {
   let result = {
