@@ -1,1 +1,1 @@
-# @wnynya/dns
+# @amuject/dns

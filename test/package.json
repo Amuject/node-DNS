@@ -6,6 +6,7 @@
     "test:cjs": "node test.cjs"
   },
   "dependencies": {
+    "@amuject/dns": "file:..",
     "@wnynya/dns": "file:..",
     "@wnynya/ip": "file:.."
   }
